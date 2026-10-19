@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โครงการสัมมนา UX/UI 101 - คณะวิทยาการคอมพิวเตอร์</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+    <nav class="navbar no-print">
+        <a href="index.html" class="nav-logo"><i class="fas fa-pen-ruler"></i> UX/UI 101 Report</a>
+        <div class="nav-anchors">
+            <a href="#schedule">กำหนดการ</a>
+            <a href="#summary">สรุปเนื้อหา</a>
+            <a href="#showcase">โครงงาน</a>
+            <a href="#issues">ปัญหาและข้อเสนอแนะ</a>
+            <a href="#gallery">ภาพกิจกรรม</a>
+        </div>
+        <div class="nav-links">
+            <a href="members.html" class="btn-outline"><i class="fas fa-users"></i><span>สมาชิกผู้จัดทำ</span></a>
+            <button onclick="window.print()" class="btn-primary"><i class="fas fa-file-pdf"></i> พิมพ์รายงาน</button>
+        </div>
+    </nav>
+
+    <!-- แบนเนอร์หลัก -->
+    <header class="hero no-print">
+        <div class="slider">
+            <div class="slide active"><img src="headphoto1.jpg" alt="ภาพบรรยากาศงาน 1"></div>
+            <div class="slide"><img src="headphoto2.jpg" alt="ภาพบรรยากาศงาน 2"></div>
+            <div class="slide"><img src="headphoto3.jpg" alt="ภาพบรรยากาศงาน 3"></div>
+            <div class="slide"><img src="headphoto4.jpg" alt="ภาพบรรยากาศงาน 4"></div>
+            <div class="slide"><img src="headphoto5.jpg" alt="ภาพบรรยากาศงาน 5"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fas fa-file-lines"></i> รายงานสรุปผลการดำเนินงาน</span>
+            <h1>โครงการสัมมนาวิชาการ</h1>
+            <h2>UX/UI 101: <span>THINK LIKE A USER,</span> DESIGN LIKE A PRO</h2>
+            <p>เข้าใจผู้ใช้ ออกแบบได้ดีกว่า สร้างประสบการณ์ที่ดีกว่า</p>
+            <div class="hero-chips">
+                <span class="chip"><i class="fas fa-calendar-day"></i> 23 กันยายน 2569</span>
+                <span class="chip"><i class="fas fa-map-marker-alt"></i> ห้องประชุมนิทัศน์เพียกขุนทด</span>
+                <span class="chip"><i class="fas fa-graduation-cap"></i> สาขาวิชาวิทยาการคอมพิวเตอร์</span>
+            </div>
+        </div>
+        <div class="dots" id="dots"></div>
+    </header>
+
+    <main class="container">
+
+        <!-- สถิติโครงการ -->
+        <div class="stats no-print">
+            <div class="stat"><b data-count="5">0</b><span>ผู้จัดทำโครงการ</span></div>
+            <div class="stat"><b data-count="5">0</b><span>วิทยากร</span></div>
+            <div class="stat"><b data-count="5">0</b><span>Project Showcase</span></div>
+            <div class="stat"><b data-count="2">0</b><span>พิธีกรดำเนินรายการ</span></div>
+        </div>
+
+        <!-- [เฉพาะการพิมพ์] หัวกระดาษ -->
+        <div class="only-print print-header">
+            <div class="print-header-top">
+                <h1 class="print-logo-text">PBRU CS REPORT</h1>
+                <div class="print-meta">
+                    <p><strong>Report No.</strong> : CS-2026-UXUI-01</p>
+                    <p><strong>Date</strong> : 24-Sep-2026</p>
+                </div>
+            </div>
+            <hr class="print-divider">
+            <h2 class="print-doc-title">รายงานสรุปผลการดำเนินงานโครงการสัมมนาวิชาการ</h2>
+        </div>
+
+        <!-- ข้อมูลโครงการ -->
+        <section class="section-block project-header" id="info">
+            <h3 class="section-heading no-print">ข้อมูลโครงการ</h3>
+
+            <div class="print-info-grid only-print">
+                <div class="p-row"><div class="p-label">ชื่อโครงการ</div><div class="p-value">: โครงการสัมมนาวิชาการ หัวข้อ “UX/UI 101: THINK LIKE A USER, DESIGN LIKE A PRO”</div></div>
+                <div class="p-row"><div class="p-label">สถานที่ดำเนินการ</div><div class="p-value">: ห้องประชุมนิทัศน์เพียกขุนทด คณะวิทยาการคอมพิวเตอร์</div></div>
+                <div class="p-row"><div class="p-label">หน่วยงานที่รับผิดชอบ</div><div class="p-value">: คณะผู้จัดทำโครงการสัมมนา (สาขาวิชาวิทยาการคอมพิวเตอร์)</div></div>
+                <div class="p-row">
+                    <div class="p-label">ผู้รับผิดชอบโครงการ</div>
+                    <div class="p-value">: นางสาวเอราวัณ แป้นทอง, นายบุญยวีร์ ธนานันท์, นายอัครชัย สามารถ, <br>&nbsp;&nbsp;นายธนรัฐ หอมกลิ่น, นายปุรเชษฐ์ อบรม</div>
+                </div>
+            </div>
+
+            <div class="info-cards no-print">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>สถานที่ดำเนินการ</h3>
+                    <p>ห้องประชุมนิทัศน์เพียกขุนทด<br>คณะวิทยาการคอมพิวเตอร์</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-building"></i></div>
+                    <h3>หน่วยงานที่รับผิดชอบ</h3>
+                    <p>คณะผู้จัดทำโครงการสัมมนา<br>(สาขาวิชาวิทยาการคอมพิวเตอร์)</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>ผู้รับผิดชอบโครงการ</h3>
+                    <ul class="clean-list">
+                        <li>นางสาวเอราวัณ แป้นทอง</li>
+                        <li>นายบุญยวีร์ ธนานันท์</li>
+                        <li>นายอัครชัย สามารถ</li>
+                        <li>นายธนรัฐ หอมกลิ่น</li>
+                        <li>นายปุรเชษฐ์ อบรม</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ขั้นตอนการเตรียมงาน (Toggle) -->
+        <div class="text-center no-print" id="prep">
+            <button class="btn-toggle" onclick="togglePrep()">
+                <i class="fas fa-clipboard-list"></i> ขั้นตอนการเตรียมความพร้อมก่อนจัดงาน <i class="fas fa-chevron-down chev"></i>
+            </button>
+        </div>
+        <div class="prep-wrap">
+            <div id="prep-content" class="prep-content">
+                <h3 class="section-heading">1. การเตรียมความพร้อมก่อนการจัดงาน</h3>
+                <div class="prep-list">
+                    <div class="prep-item"><span class="prep-number no-print">1</span>
+                        <div><strong>การจัดทำกำหนดการและบทพิธีกร:</strong> จัดทำกำหนดการละเอียดและสคริปต์สำหรับพิธีกรทั้ง 2 ท่าน เพื่อให้การดำเนินรายการต่อเนื่องและครอบคลุม</div></div>
+                    <div class="prep-item"><span class="prep-number no-print">2</span>
+                        <div><strong>การเตรียมความพร้อมด้านเนื้อหา:</strong> ประสานงานทีมวิทยากรทั้ง 5 ท่าน ในการเตรียมเนื้อหาบรรยายและผลงาน Project Showcase ให้สอดคล้องกับหัวข้อกิจกรรม</div></div>
+                    <div class="prep-item"><span class="prep-number no-print">3</span>
+                        <div><strong>การเตรียมกิจกรรมและของรางวัล:</strong> จัดเตรียมกิจกรรมเกมสำหรับให้ผู้เข้าร่วมงานได้ร่วมสนุกและแจกของรางวัล เพื่อกระตุ้นการมีส่วนร่วม</div></div>
+                    <div class="prep-item"><span class="prep-number no-print">4</span>
+                        <div><strong>การเตรียมระบบประเมินผล:</strong> จัดทำแบบประเมินความพึงพอใจในรูปแบบ QR Code เพื่อความสะดวกในการเก็บข้อมูลหลังจบงาน</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- กำหนดการ -->
+        <section class="section-block print-mt" id="schedule">
+            <h3 class="section-heading">2. การจัดลำดับกิจกรรม (23 กันยายน 2569)</h3>
+            <div class="timeline">
+                <div class="timeline-item"><div class="time">13.30 - 13.40 น.</div>
+                    <div class="content"><strong>ช่วงเปิดงาน:</strong> พิธีกรกล่าวต้อนรับ ชี้แจงวัตถุประสงค์ และเกริ่นนำความสำคัญของ UX/UI ก่อนเชิญวิทยากรขึ้นเวที</div></div>
+                <div class="timeline-item"><div class="time">13.40 - 14.20 น.</div>
+                    <div class="content"><strong>นำเสนอเนื้อหาหลัก:</strong> ทีมวิทยากรบรรยายหัวข้อ UX/UI 101 เจาะลึก 4 แกนหลัก (User Research, Design Thinking, UI Design, Real Case Study)</div></div>
+                <div class="timeline-item"><div class="time">14.20 - 15.00 น.</div>
+                    <div class="content"><strong>Project Showcase ส่วนที่ 1:</strong> นำเสนอโปรเจกต์ "ระบบร้านค้าชุมชน" (พงศกร) และ "ระบบจำหน่ายมือถือ" (ภูริเดช)</div></div>
+                <div class="timeline-item"><div class="time">15.00 - 15.10 น.</div>
+                    <div class="content"><strong>พักเบรก:</strong> ให้ผู้เข้าร่วมงานพักผ่อนตามอัธยาศัยเป็นเวลา 10 นาที</div></div>
+                <div class="timeline-item"><div class="time">15.10 - 16.00 น.</div>
+                    <div class="content"><strong>Project Showcase ส่วนที่ 2:</strong> นำเสนอโปรเจกต์ "ระบบคิดคำนวณค่าแรง" (กมลภพ), "ระบบเช่ารถ" (จักรกฤษณ์) และ "ระบบร้านอาหาร" (ณฐกร)</div></div>
+                <div class="timeline-item"><div class="time">ช่วงท้าย</div>
+                    <div class="content"><strong>กิจกรรมสรุป:</strong> ช่วงถาม-ตอบ (Q&A), พิธีกรกล่าวสรุปเนื้อหา, สแกน QR Code ประเมินผล และกล่าวปิดการสัมมนา</div></div>
+            </div>
+        </section>
+
+        <!-- สรุปเนื้อหา -->
+        <section class="section-block print-mt" id="summary">
+            <h3 class="section-heading">3. สรุปเนื้อหางานสัมมนา</h3>
+            <div class="content-box">
+                <h4>3.1 ความแตกต่างและบทบาทของ UX และ UI</h4>
+                <ul class="bullet-list">
+                    <li><strong>UX (User Experience):</strong> การออกแบบประสบการณ์ผู้ใช้งาน เน้นการวางโครงสร้างระบบ แก้ปัญหา และศึกษาพฤติกรรมผู้ใช้เพื่อให้ใช้งานได้ลื่นไหล เปรียบเสมือน "สถาปนิก" ที่ต้องวางโครงสร้างบ้าน</li>
+                    <li><strong>UI (User Interface):</strong> การออกแบบส่วนติดต่อผู้ใช้งาน เน้นความสวยงาม สบายตา การเลือกใช้สี ฟอนต์ และการจัดวาง Layout เปรียบเสมือน "มัณฑนากร" ที่ตกแต่งบ้านให้สวยงาม</li>
+                </ul>
+                <h4 class="mt-4">3.2 หลักการออกแบบ UX และ UI ที่ดี</h4>
+                <ul class="bullet-list">
+                    <li><strong>หลักการ UX ที่ดี:</strong> โครงสร้างข้อมูลชัดเจน ใช้งานง่าย (Usability) ลื่นไหล (Smooth User Flow) ตัวอย่างเช่น Shopee (ลดขั้นตอน), Netflix (แนะนำคอนเทนต์)</li>
+                    <li><strong>หลักการ UI ที่ดี:</strong> มีความเรียบง่าย (Simplicity) สอดคล้องกัน (Consistency) สื่อสารสถานะการทำงานชัดเจน (Feedback) เช่น Google Search, Apple Calculator</li>
+                    <li><strong>เครื่องมือสำหรับการออกแบบ (UX/UI Tools):</strong> แนะนำ Figma, Penpot และ Adobe XD รวมถึงสาธิตการสร้าง Prototype และการใช้ Figma AI (Make Design)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project Showcase -->
+        <section class="section-block print-mt" id="showcase">
+            <h3 class="section-heading">4. สรุปการนำเสนอโครงงาน (Project Showcase)</h3>
+            <p class="mb-4">วิทยากรได้นำความรู้ด้าน UX/UI มาประยุกต์ใช้ในการพัฒนาโปรเจกต์จริง จำนวน 5 ผลงาน ได้แก่</p>
+            <div class="project-list">
+                <div class="project-card">
+                    <div class="project-img no-print"><img src="w1.png" alt="พงศกร"></div>
+                    <div class="project-info">
+                        <h4 class="project-title">โปรเจกต์ที่ 1: Khang Tang Maps (ระบบร้านค้าชุมชนข้างทางด้วยระบบแผนที่)</h4>
+                        <div class="project-author"><strong>ผู้นำเสนอ:</strong> นายพงศกร บุษษะ</div>
+                        <p>แพลตฟอร์มรวบรวมร้านอาหารและร้านค้าท้องถิ่นในจังหวัดเพชรบุรี ช่วยให้ค้นหาร้านเด็ดใกล้ตัวได้ง่าย พัฒนาด้วย HTML, CSS, JavaScript, PHP และแผนที่ Leaflet.js</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img no-print"><img src="w2.png" alt="ภูริเดช"></div>
+                    <div class="project-info">
+                        <h4 class="project-title">โปรเจกต์ที่ 2: MobileShop (ระบบจำหน่ายมือถือออนไลน์)</h4>
+                        <div class="project-author"><strong>ผู้นำเสนอ:</strong> นายภูริเดช ตะโกมา</div>
+                        <p>เว็บแอปพลิเคชัน E-Commerce ที่เน้นแก้ปัญหาการเลือกซื้อ มีฟีเจอร์ Compare Specs แบบ Side-by-Side รองรับชำระเงินผ่าน QR Code PromptPay และ Dashboard จัดการข้อมูล</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img no-print"><img src="w3.png" alt="กมลภพ"></div>
+                    <div class="project-info">
+                        <h4 class="project-title">โปรเจกต์ที่ 3: ระบบคิดคำนวณรายได้และค่าแรงคนงานสวนมะพร้าว</h4>
+                        <div class="project-author"><strong>ผู้นำเสนอ:</strong> นายกมลภพ อร่ามรักษ์</div>
+                        <p>ระบบจัดการพื้นที่สวน คำนวณค่าแรงที่ซับซ้อน (เช่น สอยเป็นลูก ขนเป็นเที่ยว) บันทึกรายจ่าย และสรุปกำไรสุทธิ เพื่อแก้ปัญหาการจดบันทึกลงกระดาษที่มักสูญหาย</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img no-print"><img src="w4.png"></div>
+                    <div class="project-info">
+                        <h4 class="project-title">โปรเจกต์ที่ 4: Drive Easy (ระบบเช่ารถออนไลน์)</h4>
+                        <div class="project-author"><strong>ผู้นำเสนอ:</strong> นายจักรกฤษณ์ นาคสุก</div>
+                        <p>ระบบบริการเช่ารถที่ช่วยให้ลูกค้าตรวจสอบรถว่างตามช่วงเวลา คำนวณค่าเช่าอัตโนมัติ จองพร้อมชำระเงินทันที และผู้ดูแลระบบสามารถตรวจสอบรายการเช่าได้อย่างมีประสิทธิภาพ</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img no-print"><img src="w5.png" alt="ณฐกร"></div>
+                    <div class="project-info">
+                        <h4 class="project-title">โปรเจกต์ที่ 5: ระบบจัดการร้านอาหารสำหรับเจ้าของร้านรายเดี่ยว</h4>
+                        <div class="project-author"><strong>ผู้นำเสนอ:</strong> นางสาวณฐกร เจะรัมย์</div>
+                        <p>ระบบสั่งอาหารผ่านการสแกน QR Code (รองรับทานที่ร้านและสั่งกลับบ้าน) เพื่อแก้ปัญหาร้านอาหารที่พบปัญหาแซงคิว คิดเงินผิดพลาด ช่วยให้เจ้าของร้านทำงานคนเดียวได้สะดวกขึ้น</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ปัญหา อุปสรรค -->
+        <section class="section-block print-mt" id="issues">
+            <h3 class="section-heading">5. ปัญหา อุปสรรค และแนวทางแก้ไข</h3>
+            <div class="problem-container">
+                <div class="problem-box">
+                    <h4 class="box-title"><i class="fas fa-exclamation-triangle text-alert no-print"></i> 5.1 ปัญหาและอุปสรรคที่พบ</h4>
+                    <ul class="bullet-list">
+                        <li><strong>ด้านการรักษาเวลา:</strong> การนำเสนอและช่วง Q&A บางช่วงใช้เวลาเกินกำหนด ทำให้คิวงานช่วงหลังต้องกระชับขึ้น</li>
+                        <li><strong>ด้านเทคนิคและอุปกรณ์:</strong> พบความท้าทายในการสลับจอแสดงผลของวิทยากรแต่ละท่าน และการคุมความเรียบร้อยของไมโครโฟน</li>
+                        <li><strong>ด้านการมีส่วนร่วม:</strong> ผู้เข้าร่วมงานบางส่วนยังไม่กล้าแสดงความคิดเห็น ทำให้พิธีกรต้องใช้เวลาในการกระตุ้น</li>
+                    </ul>
+                </div>
+                <div class="problem-box">
+                    <h4 class="box-title"><i class="fas fa-wrench text-cyan no-print"></i> 5.2 แนวทางการแก้ไขปัญหาหน้างาน</h4>
+                    <ul class="bullet-list">
+                        <li><strong>ทีมงานฝ่ายควบคุมเวลา:</strong> ประสานงานและส่งสัญญาณแจ้งเตือนวิทยากร เพื่อให้รวบรัดเนื้อหาเข้าสู่กำหนดการเดิม</li>
+                        <li><strong>ทีมงานฝ่ายเทคนิค (Control Room):</strong> เตรียมพร้อมสลับจอและทดสอบไมโครโฟนล่วงหน้า เพื่อลดระยะเวลา Dead Air</li>
+                        <li><strong>พิธีกร:</strong> เตรียมคำถามสำรองและใช้วาทศิลป์ในการกระตุ้นบรรยากาศ ในกรณีที่ไม่มีผู้ซักถาม</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="suggestion-box mt-4">
+                <h4 class="box-title"><i class="fas fa-lightbulb text-orange no-print"></i> 5.3 ข้อเสนอแนะสำหรับการจัดกิจกรรมครั้งต่อไป</h4>
+                <ul class="bullet-list">
+                    <li>ควรมีการเผื่อเวลาสำหรับช่วงการถาม-ตอบ (Q&A) ของแต่ละโปรเจกต์ให้มีความยืดหยุ่นมากขึ้น หรือกำหนดเวลาให้เคร่งครัดยิ่งขึ้น</li>
+                    <li>ควรเพิ่มรอบการซักซ้อมคิวทางเทคนิค (Dry Run) โดยเฉพาะการสลับหน้าจอการนำเสนอให้มีความราบรื่นและไร้รอยต่อ</li>
+                    <li>อาจเพิ่มรูปแบบกิจกรรมที่ใช้แพลตฟอร์มการมีส่วนร่วมออนไลน์ (เช่น Slido, Kahoot) เพื่อเปิดโอกาสให้ผู้เข้าร่วมพิมพ์คำถามเข้ามาได้</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ภาพกิจกรรม (สร้างจาก script.js: galleryData) -->
+        <section class="section-block print-mt" id="gallery">
+            <h3 class="section-heading">6. ภาพรวมกิจกรรม</h3>
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </section>
+
+        <!-- [เฉพาะการพิมพ์] ลายเซ็น -->
+        <div class="only-print print-footer">
+            <p><strong>Signed for and on behalf of</strong></p>
+            <p><strong>Seminar Committee</strong></p>
+            <br><br>
+            <div class="signature-line"></div>
+            <p><strong>(นางสาวเอราวัณ แป้นทอง)</strong></p>
+            <p>ประธานโครงการสัมมนาวิชาการ</p>
+            <br>
+            <hr class="print-divider-thin">
+            <p class="print-address">คณะวิทยาการคอมพิวเตอร์ มหาวิทยาลัยราชภัฏเพชรบุรี (Phetchaburi Rajabhat University)<br>
+            เว็บไซต์: www.pbru.ac.th</p>
+        </div>
+    </main>
+
+    <footer class="site-footer no-print">
+        <div class="container text-center">
+            <p>&copy; 2026 โครงการสัมมนาวิชาการ สาขาวิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยราชภัฏเพชรบุรี</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox no-print" id="lightbox">
+        <button class="lb-btn lb-close" onclick="closeLightbox()" aria-label="ปิด"><i class="fas fa-xmark"></i></button>
+        <button class="lb-btn lb-prev" onclick="openLightbox(lbIndex-1)" aria-label="ก่อนหน้า"><i class="fas fa-chevron-left"></i></button>
+        <button class="lb-btn lb-next" onclick="openLightbox(lbIndex+1)" aria-label="ถัดไป"><i class="fas fa-chevron-right"></i></button>
+        <img src="" alt=""><p></p>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top-btn no-print" onclick="scrollToTop()" title="เลื่อนขึ้นบนสุด"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
